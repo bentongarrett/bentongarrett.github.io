@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Local Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div id="outer">
+  <div id="container">
+    
+    <div id="loading" class="text-center">
+      <p id="load-status">Your weather is loading...</p>
+    </div>
+
+    <div id="http-alert-message" class="error text-center">I'm using your IP address to determine your location. Use HTTPS and enable location services for a more accurate reading.</div>
+    
+    <div id="main-title" class="text-center to-toggle">
+      <h2>Your local</h2>
+      <h1>WeatherApp</h1>
+    </div>
+    
+        <div id="weather-data-div" class="text-center">
+
+          <div id="city-name" class="to-toggle">
+          <!--City name goes here-->
+          </div>
+
+
+      <div class="temperature">
+        <button id="unit-change" type="button" class="btn btn-primary to-toggle">
+        <!--Temperature and unit change button go here-->
+    </div>
+
+  
+
+      <div id = "condition" class = "to-toggle">
+      <!--Current condition goes here-->
+    </div>
+
+  
+
+    <div id = "condition-icon" class = "to-toggle">
+      <!--Condition icon goes here-->
+    </div>
+      
+      <div id = "search" class = "input-group add-on to-toggle">
+        <input type="text" class="form-control" placeholder="Other location (ZIP or city name)" onfocus= "" id="search-value">
+        
+        <div class="input-group-btn">
+          <button id="search-button" class="btn btn-default"><i class="glyphicon glyphicon-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div id="search-error-message" class="error text-center">Sorry, I'm unable to find that place.</div>
+
+    <div id="attribute" class="text-center to-toggle">
+      <br>
+      <p>by <a href="http://www.bentongarrett.com" target="_blank">Benton Garrett</a></p>
+    </div>
+
+  </div>
+</div>
+</div>
+  
+<div id="preload">
+   <img src="https://s32.postimg.org/edyc7gjk5/tstorm.jpg" width="1" height="1" alt="Image 01" />
+   <img src="https://s32.postimg.org/t631ysphh/lightrain.jpg" width="1" height="1" alt="Image 02" />
+   <img src="https://s32.postimg.org/41c1ldq11/rain.jpg" width="1" height="1" alt="Image 03" />
+   <img src="https://s32.postimg.org/agb2i1wqt/snow.jpg" width="1" height="1" alt="Image 04" />
+   <img src="https://s32.postimg.org/q9g0yijnp/clearsky.jpg" width="1" height="1" alt="Image 05" />
+   <img src="https://s32.postimg.org/xqp8dq96t/cloudy.jpg" width="1" height="1" alt="Image 06" />
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

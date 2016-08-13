@@ -1,0 +1,108 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Oxygen';
+}
+
+#outer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #F8F8F8;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition: background .25s linear;
+}
+
+#outer #container {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 350px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  opacity: 0.85;
+}
+
+h1 {
+  color: #505050;
+  font-size: 48px;
+  margin: 0px 0px 30px 0px;
+}
+
+h2 {
+  color: #505050;
+  margin: 10px 0px 0px 0px;
+}
+
+p {
+  font-weight: bold;
+}
+
+.to-toggle {
+  display: none;
+}
+
+#city-name {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px 0px 20px 0px;
+}
+
+.temperature {
+  font-size: 22px;
+  text-align: center;
+  padding: 10px 5px 0px 8px;
+}
+
+img.expand {
+  width: 7em;
+}
+
+#condition {
+  text-transform: capitalize;
+}
+
+.error {
+  color: #fff;
+  background-color: #AA3939;
+  display: none;
+}
+
+.add-on .input-group-btn > .btn {
+  border-left-width: 2;
+  left: -2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  opacity: 0.85;
+}
+
+.add-on .form-control {
+  text-align: center;
+  width: 260px;
+}
+
+
+/*Placeholder text styling*/
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* older Firefox*/
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
