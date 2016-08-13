@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700' rel='stylesheet' type='text/css'>
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div id="outer">
+  <div id="container">
+
+    <p id = "attribution">by <a href = "http://www.bentongarrett.com" target = "_blank">Benton Garrett</a></p>
+
+    <h1 id='title' class = "all-center">Pomodoro!</h1>
+
+    <div class='row all-center incrementers-label'>
+      <div id = "session-label" class = "col-xs-6">Session Length</div>
+      <div id = "break-label" class = "col-xs-6">Break Length</div>
+    </div>
+    
+    <div id = "incrementers" class='row all-center'>
+      <div class='col-xs-2'>
+        <button id='session-decrementer' class='btn btn-primary'><span class="glyphicon glyphicon-chevron-down"></span></button>
+      </div>
+
+      <div class='col-xs-2'>
+        <p id="session-increment-display"></p>
+      </div>
+
+      <div class='col-xs-2'>
+        <button id='session-incrementer' class='btn btn-primary'><span class="glyphicon glyphicon-chevron-up"></span></button>
+      </div>
+      
+      <div class='col-xs-2'>
+        <button id='break-decrementer' class='btn btn-primary'><span class="glyphicon glyphicon-chevron-down"></span></button>
+      </div>
+
+      <div class='col-xs-2'>
+        <p id="break-increment-display"></p>
+      </div>
+
+      <div class='col-xs-2'>
+        <button id='break-incrementer' class='btn btn-primary'><span class="glyphicon glyphicon-chevron-up"></span></button>
+      </div>
+    </div>
+    
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <span id = "progress-percentage"></span>
+      </div>
+    </div>
+
+    <div class = "row all-center">
+      <div class="col-xs-6">
+        <button id='session-button' class='btn btn-primary'>Start</button>
+      </div>
+      
+            <div class="col-xs-6">
+        <button id='reset-button' class='btn btn-secondary' disabled='true'>Reset</button>
+      </div>
+    </div>
+
+      <!--Container closing-->
+    </div>
+    <!--Outer closing-->
+  </div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
