@@ -1,0 +1,91 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Lora;
+}
+
+#outer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition: background .25s linear;
+}
+
+#outer #container {
+  background-color: #fff;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  transform:     translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+#quote-div {
+  display: -webkit-flex;
+    display: flex;
+  min-height: 80vmin;
+}
+
+#quote-mark {
+  -webkit-flex: none;
+    flex: none;
+  font-size: 10vmin;
+  width: 70px;
+  margin: -7px 50px 0px 0px;
+}
+
+#quote-content {
+  font-size: 5vmin;
+  -webkit-flex: 3;
+    flex: 3;
+  text-align: right;
+}
+
+#tweet-button-div {
+  text-align: left;
+}
+
+#quote-button-div {
+  text-align:  right;
+}
+
+.btn {
+  font-size: 20px;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:active {
+  color: #fff;
+}
+
+.btn:visited {
+  color: #fff;
+}
+
+@media screen and (min-width: 480px) {
+  #outer #container {
+    max-width: 800px;
+  }
+  
+  #quote-div {
+    min-height: 30vmin;
+  }
+  
+  #quote-content {
+    font-size: 2em;
+  }
+}
