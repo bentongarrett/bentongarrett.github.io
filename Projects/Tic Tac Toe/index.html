@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class = "container"> 
+  <div class = "row">
+    <div id = "center-column" class = "col-xs-12">
+      
+      <h1 id = "title">Tic-Tac-Toe</h1>
+      <h4 id = "attribution">by <a href="http://bentongarrett.com" target = "_blank">Benton Garrett</a></h4>
+      
+      <div id = "selectors-row" class = "row">
+        <div class = "col-xs-4"><button id = "x-button" class = "choose-button">X</button></div>
+        <div class = "col-xs-4">
+          <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+          &nbsp;Choose!&nbsp;
+          <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+        </div>
+        <div class = "col-xs-4"><button id = "o-button" class = "choose-button">O</button></div>
+      </div>
+      
+
+      <div id ="win-celebrate"></div>
+      
+      <!--Tic-tac-toe boxes. First number indicates row. Second number indicates column.-->
+      <div id = "row1" class= "row ticbox">
+        <div id = "box-1-1" class = "box col-xs-4">&nbsp;</div>
+        <div id = "box-1-2" class = "box col-xs-4">&nbsp;</div>
+        <div id = "box-1-3" class = "box col-xs-4">&nbsp;</div>
+      </div>
+      <div id = "row2" class= "row ticbox">
+        <div id = "box-2-1" class = "box col-xs-4">&nbsp;</div>
+        <div id = "box-2-2" class = "box col-xs-4">&nbsp;</div>
+        <div id = "box-2-3" class = "box col-xs-4">&nbsp;</div>
+      </div>
+      <div id = "row3" class= "row ticbox">
+        <div id = "box-3-1" class = "box col-xs-4">&nbsp;</div>
+        <div id = "box-3-2" class = "box col-xs-4">&nbsp;</div>
+        <div id = "box-3-3" class = "box col-xs-4">&nbsp;</div>
+      </div>
+    
+    <!--End center column-->
+    </div>
+  <!--End row-->
+  </div>
+<!--End container-->
+</div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

@@ -1,0 +1,133 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: Indie Flower;
+  background-size: 100%;
+}
+
+#center-column {
+  text-align: center;
+  background-color: #000;
+  opacity: .9;
+  margin: 10px 0px 10px 0px;
+}
+
+#title {
+  font-size: 5vmax;
+}
+
+#attribution {
+  float: center;
+}
+
+#selectors-row {
+  white-space: nowrap;
+  font-size: 2vmax;
+  background-color: #000;
+  padding: 30px;
+  position: relative;
+  z-index: 0;
+}
+
+.choose-button {
+  padding: 10px;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+#win-celebrate {
+  font-size: 10vmax;
+  min-width: 100%;
+  position:absolute;
+  z-index: 1;
+  color: #fff;
+  background-color: #000;
+  opacity: .5;
+  margin: 0px 50px 0px -15px;
+  display: none;
+}
+
+/*
+Boxes
+*/
+.ticbox {
+  display: none;
+}
+
+.box {
+  font-size: 30px;
+  border-style: solid;
+  padding: 30px;
+  position: relative;
+  z-index: 0;
+}
+
+.winning-boxes {
+  background-color: #FFD700;
+}
+
+#box-1-1 {
+  border-width: 0px 2px 2px 0px;
+}
+
+#box-1-2 {
+  border-width: 0px 0px 2px 0px;
+}
+
+#box-1-3 {
+  border-width: 0px 0px 2px 2px;
+}
+
+#box-2-1 {
+  border-width: 0px 2px 2px 0px;
+}
+
+#box-2-2 {
+  border-width: 0px 0px 2px 0px;
+}
+
+#box-2-3 {
+  border-width: 0px 0px 2px 2px;
+}
+
+#box-3-1 {
+  border-width: 0px 2px 0px 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+#box-3-2 {
+  border-width: 0px 0px 0px 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+#box-3-3 {
+  border-width: 0px 0px 0px 2px;
+  margin: 0px 0px 10px 0px;
+}
+
+/*
+End Boxes
+*/
+
+/*Link style
+/* unvisited link */
+a:link {
+  color: #FFD700;
+}
+
+/* visited link */
+a:visited {
+  color: #FFD700;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #FFD700;
+}
+*/
