@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Calc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,900,700' rel='stylesheet' type='text/css'>
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div id="outer">
+  <div id="container">
+
+    <div class="row">
+      <div id="title" class="col-xs-12">
+        <h1>Simple Calc</h1>
+        <h5>by <a href = "http://www.bentongarrett.com" target = "_blank">Benton Garrett</a></h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="operation-panel" class="col-xs-12">
+        <p id="top-operation-panel"></p>
+        <p id="main-operation-panel"></p>
+      </div>
+    </div>
+
+    <!--Button row 1-->
+    <div id = "control-buttons-div" class="row no-gutter">
+      <div class="col-xs-3">
+        <div id="ac" class="btn action-button">AC</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="backspace" class="btn action-button">&#x232b;</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="divide" class="btn action-button">&#xf7;</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="multiply" class="btn action-button">x</div>
+      </div>
+    </div>
+    <!--End button row 1-->
+
+    <!--Button row 2-->
+    <div class="row no-gutter">
+      <div class="col-xs-3">
+        <div id="seven" class="btn action-button">7</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="eight" class="btn action-button">8</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="nine" class="btn action-button">9</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="subtract" class="btn action-button">-</div>
+      </div>
+    </div>
+    <!--End button row 2-->
+
+    <!--Button row 3-->
+    <div class="row no-gutter">
+      <div class="col-xs-3">
+        <div id="four" class="btn action-button">4</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="five" class="btn action-button">5</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="six" class="btn action-button">6</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="add" class="btn action-button">+</div>
+      </div>
+    </div>
+    <!--End button row 3-->
+
+    <!--Button row 4-->
+    <div class="row no-gutter">
+      <div class="span6 col-xs-3">
+        <div id="one" class="btn action-button">1</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="two" class="btn action-button">2</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="three" class="btn action-button">3</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="ans" class="btn action-button">Ans</div>
+      </div>
+    </div>
+    <!--End button row 4-->
+
+    <!--Button row 5-->
+    <div class="row no-gutter">
+      <div class="col-xs-3">
+        <div id="bottom-left-blank" class="btn action-button">&nbsp;</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="zero" class="btn action-button">0</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="decimal" class="btn action-button">.</div>
+      </div>
+
+      <div class="col-xs-3">
+        <div id="equals" class="btn action-button">=</div>
+      </div>
+    </div>
+    <!--End button row 5-->
+
+    <div class="row">
+      <div id="paper-tape-toggle-div" class="col-xs-12">
+        <button id="paper-tape-toggle-button" type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          <i id = "paper-tape-false" class="fa fa-square-o" aria-hidden="true"></i><i id = "paper-tape-true" class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;Paper Tape
+        </button>
+      </div>
+    </div>
+    <div id="paper-tape" class="row">
+      <div id="paper-tape-operations-div" class="col-xs-6">
+        <ul id="paper-tape-operations"></ul>
+      </div>
+      <div id="paper-tape-answers-div" class="col-xs-6">
+        <ul id="paper-tape-answers"></ul>
+      </div>
+      <div class="row">
+        <div id="paper-tape-toggle-div" class="col-xs-12">
+          <button id="clear-paper-tape" type="button" class="btn btn-link">Clear Paper Tape</button>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
