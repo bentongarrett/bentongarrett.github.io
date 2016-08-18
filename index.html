@@ -1,7 +1,389 @@
 <!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by bentongarrett (http://jsbin.com/divaput/7/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style id="jsbin-css">
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans";
+}
+
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*NAVBAR BEGIN*/
+nav {
+  height: 40px;
+  width: 100%;
+  background: rgba(255,255,255, 0);
+  font-size: 11pt;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 600px;
+  height: 40px;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+nav a {
+  color: #000;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+nav li a {
+  border-right: 1px solid #000;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+  border-right: 0;
+}
+
+nav a:hover, nav a:active {
+  
+}
+
+nav a#pull {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  nav {
+      display: inline; 
+      height: auto;
+    
+    }
+    nav ul {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+    nav li {
+      width: 33%;
+      float: left;
+      position: relative;
+    }
+    nav li a {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+    nav a {
+      text-align: left;
+      width: 100%;
+      text-indent: 25px;
+    }
+}
+
+/*NAVBAR END*/
+
+/*MAIN CONTENT BEGIN*/
+
+#main {
+  width: 100%;
+  text-align: center;
+}
+
+.vertical-container {
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+
+
+.section-title {
+  background-color:rgba(255,255,255, 0.3);
+  font-size: 20px;
+  margin: 1em auto;
+}
+
+#name-title {
+  margin: 0em 1em 1em 1em;
+  font-size: 30px;
+  height: 50vmax;
+}
+
+.resume-entry {
+  display: inline-block;
+  vertical-align: top;
+  border-style: solid;
+  width: 300px;
+  height: 300px;
+  margin: 0px 20px 20px 0px;
+  text-align: left;
+  padding: 5px;
+}
+
+.resume-entry h3 {
+  text-align: center;
+}
+
+.project-example {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 250px;
+  min-height: 250px;
+  margin: 0px 20px 20px 0px;
+  border-style: solid;
+}
+
+.project-prev-image {
+  height: 250px; width: 250px;
+  margin: 0px 0px -4px 0px;
+}
+
+#contact {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 300px;
+  height: 100px;
+  margin: 1em auto;
+  padding: 0px 0px 100px 0px;
+  font-size: 50px;
+  font-family: FontAwesome;
+  text-align: center;
+}
+
+#contact p {
+  font-size: 20px;
+  font-family: "PT Sans";
+}
+
+#to-top {
+  cursor: pointer;
+  font-weight: 700;
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+  border-radius: 2px;
+  width: 50px;
+  padding: 10px;
+  background-color: rgba(255,255,255, 0.5);
+}
+/*MAIN CONTENT END*/
+</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>Just setting things up!</p>
+
+  <!--NAVBAR BEGIN-->
+  <nav id = "top" class="clearfix">
+    <ul class="clearfix">
+      <li><a href="#" id = "resume-link">Resume</a></li>
+      <li><a href="#" id = "projects-link">Projects</a></li>
+      <li><a href="#" id = "contact-link">Contact</a></li> 
+    </ul>
+    <a href="#" id="pull">Navigate</a>
+  </nav>
+  <!--NAVBAR END-->
+  
+  <div id = "main">
+  <!--MAIN CONTENT BEGIN-->
+    <div id = "name-title" class = "section-title vertical-container"><h1>Hello!<br>I'm Benton.</h1></div>
+
+    <div id = "intro" class = "resume-entry">
+      <p>I am a senior at the University of Idaho with a double major in business information systems and human resources management. During my time at the University, I have cultivated professional skills for the workplace that complement the knowledge I have gained in the realm of web development. Moving forward, I hope to expand my horizons further in a career that allows me to continue the pursuit of excellence in all things.</p>
+    </div>
+    <div id = "education" class = "resume-entry">
+      <h3>Education</h3>
+      <ul>
+        <li style="font-weight: 700">University of Idaho (2013 - December 2016)
+          <ul style="font-weight: 500">
+            <li>Bachelor's in Business - Information Systems</li>
+            <li>Bachelor's in Business - Human Resources Management</li>
+          </ul>
+        </li>
+        <li style="font-weight: 700">Free Code Camp (February 2016 - 2017)
+          <ul>
+            <li style="font-weight: 500">HTML, CSS, Javascript</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id = "experience" class = "resume-entry">
+      <h3>Experience</h3>
+      <ul>
+        <li style="font-weight: 700">IT Services Inventory Specialist
+          <ul style="font-weight: 500">
+            <li>University of Idaho</li>
+            <li>October 2014 - May 2015</li>
+          </ul>
+        <li style="font-weight: 700">Payroll Assistant
+          <ul style="font-weight: 500">
+            <li>University of Idaho</li>
+            <li>February 2014 - July 2014</li>
+          </ul>
+        <li style="font-weight: 700">Manager
+          <ul style="font-weight: 500">
+            <li>Stranger Things LLC</li>
+            <li>Online sales</li>
+            <li>March 2011 - February 2014</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div id = "projects" class = "section-title vertical-container"><h1>Projects</h1></div>
+    <div class = "project-example">
+      <a href = "http://codepen.io/bentongarrett/full/GqxqGx/" target = "_blank">
+        <img class = "project-prev-image" src = "https://s3.postimg.org/640l312v7/calc.png">
+      </a>
+    </div>
+    <div class = "project-example">
+      <a href = "http://codepen.io/bentongarrett/full/RRJAwL/" target = "_blank">
+        <img class = "project-prev-image" src = "https://s3.postimg.org/y5emgq85f/pomodoro.png">
+      </a>
+    </div>
+    <div class = "project-example">
+      <a href = "http://codepen.io/bentongarrett/full/oxBzpY/" target = "_blank">
+        <img class = "project-prev-image" src = "https://s3.postimg.org/eotwu7d1f/quote.png">
+      </a>
+    </div>
+    <br>
+    <div class = "project-example">
+      <a href = "http://codepen.io/bentongarrett/full/aNaojv/" target = "_blank">
+        <img class = "project-prev-image" src = "https://s3.postimg.org/4sstuk79f/search.png">
+      </a>
+    </div>
+    <div class = "project-example">
+      <a href = "http://codepen.io/bentongarrett/full/NAEJZG/" target = "_blank">
+        <img class = "project-prev-image" src = "https://s3.postimg.org/tncboms3n/ticta.png">
+      </a>
+    </div>
+    <div class = "project-example">
+      <a href = "https://codepen.io/bentongarrett/full/yOPaBy/" target = "_blank">
+        <img class = "project-prev-image" src = "https://s3.postimg.org/l6ctdpner/weather.png">
+      </a>
+    </div>
+    
+
+    <div class = "section-title vertical-container"><h1>Contact</h1></div>
+    <div id = "contact" class = "vertical-container">
+      <a href = "https://www.com" target = "_blank">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href = "mailto:benton@bentongarrett.com">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </a>
+      <p>benton@bentongarrett.com</p>
+    </div>
+    
+    <div id = "to-top">^</div>
+  <!--MAIN CONTENT END-->
+  </div>
+
+<script id="jsbin-javascript">
+$(function() {
+  var pull    = $('#pull');
+    menu    = $('nav ul');
+    menuHeight  = menu.height();
+ 
+  $(pull).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle();
+  });
+});
+
+$(window).resize(function(){
+  var w = $(window).width();
+  if(w > 320 && menu.is(':hidden')) {
+    menu.removeAttr('style');
+  }
+}); 
+
+/*Generate a random Trianglify pattern and apply as background.
+Thanks to qrohlf at Github for this awesome utility.
+https://github.com/qrohlf/trianglify*/
+var pattern = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight
+    });
+$('body').css({
+  "background-image": "url(" + pattern.png() + ")"
+});
+
+
+
+$("#resume-link").click(function() {
+  $('html, body').animate({
+    scrollTop: $(".resume-entry").offset().top
+  }, 1000);
+});
+
+$("#projects-link").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#projects").offset().top
+  }, 1000);
+});
+
+$("#contact-link").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#contact").offset().top
+  }, 1000);
+});
+
+$("#to-top").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#top").offset().top
+  }, 1000);
+});
+</script>
 </body>
 </html>
