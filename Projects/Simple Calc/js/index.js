@@ -1,3 +1,9 @@
+/*
+To do:
+1) Rewrite everything to use an array of objects
+2) Fix double operation problem (eg, shouldn't be able to divide twice in a row)
+*/
+
 var operations = [];
 var answer = '';
 var paperTape = [];
@@ -64,8 +70,8 @@ $(document).ready(function() {
 
   //Subtract
   $("#subtract").click(function() {
-    operations.push(" - ");
-    $("#top-operation-panel").html(operations.join('').toString());
+      operations.push(" - ");
+      $("#top-operation-panel").html(operations.join('').toString());
   });
 
   //Button row 3
@@ -254,3 +260,11 @@ $("#paper-tape-toggle-button").click(function() {
     $("#paper-tape-answers").empty();
     $("#clear-paper-tape").css("display", "none");
   });
+
+function previousOperatorCheck() {
+  if (operations[operations.length - 1] != " ÷ " || operations[operations.length - 1] != " x " || operations[operations.length - 1] != " - " || operations[operations.length - 1] != " + "){
+    return true;
+  } else {
+    return false;
+  }
+}
