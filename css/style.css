@@ -1,0 +1,99 @@
+body {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: none;
+  font-family: Montserrat;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+#welcome h1 {
+  font-size: 75px;
+}
+
+.full {
+  /*background: url(http://placehold.it/1920x1080) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#welcome {
+  background-color: #18bc9c;
+  color: #fff;
+  text-align: center;
+  padding: 15%;
+}
+
+#projects {
+  text-align: center;
+  padding: 10%;
+}
+
+.project-example {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 250px;
+  min-height: 250px;
+  margin: 0px 20px 20px 0px;
+}
+
+.project-prev-image {
+  height: 250px; width: 250px;
+}
+
+#about {
+  background-color: #18bc9c;
+  color: #fff;
+  text-align: center;
+  padding: 15%;
+}
+
+#about h3 {
+  font-weight: 700;
+}
+
+#about h4 {
+  color: #000;
+}
+
+#description p {
+  text-align: left;
+}
+
+#education li {
+  text-align: left;
+}
+
+#experience  ul {
+  text-align: left;
+}
+
+#contact {
+  text-align: center;
+  padding: 10%;
+}
+
+#contact i {
+  font-size: 100px;
+  margin: 10px;
+}
+
+#contact p {
+  font-size: 25px;
+  margin: 5px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #18bc9c;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #18bc9c;
+}
