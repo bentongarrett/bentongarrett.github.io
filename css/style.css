@@ -10,10 +10,6 @@ h1 {
   font-size: 50px;
 }
 
-#welcome h1 {
-  font-size: 75px;
-}
-
 .full {
   /*background: url(http://placehold.it/1920x1080) no-repeat center center fixed; */
   -webkit-background-size: cover;
@@ -26,7 +22,16 @@ h1 {
   background-color: #18bc9c;
   color: #fff;
   text-align: center;
-  padding: 15%;
+  padding: 2% 0px 4% 0px;
+}
+
+#welcome h1 {
+  font-size: 75px;
+}
+
+#welcome img {
+  width: 300px;
+  margin: 0px 1.5% 0px 0px;
 }
 
 #projects {
@@ -84,7 +89,7 @@ h1 {
 }
 
 #contact p {
-  font-size: 25px;
+  font-size: 1em;
   margin: 5px;
 }
 
