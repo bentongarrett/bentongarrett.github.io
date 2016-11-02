@@ -6,7 +6,7 @@ $(".navbar-brand").click(function() {
 
 $("#projects-link").click(function() {
   $('html, body').animate({
-    scrollTop: $("#projects").offset().top
+    scrollTop: $("#portfolio").offset().top
   }, 1000);
 });
 
